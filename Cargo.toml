@@ -1,0 +1,14 @@
+[package]
+name = "blake2b"
+version = "0.1.0"
+authors = ["noot <elizabethjbinks@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+blake2-rfc = { version = "0.2.18", optional = true }
+
+[features]
+default = ["std"]
+std = [ "blake2-rfc" ]
